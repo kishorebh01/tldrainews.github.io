@@ -49,17 +49,41 @@
                                 <i class="fas fa-bolt text-white"></i>
                             </span>
                             <div class="pe-2 me-3 border-end border-white d-flex align-items-center">
-                                <p class="mb-0 text-white fs-6 fw-normal">Trending</p>
+                                <p class="mb-0 text-white fs-6 fw-normal">Upcoming Event !!</p>
                             </div>
                             <div class="overflow-hidden" style="width: 735px;">
                                 <div id="note" class="ps-2">
-                                    <img src="img/features-fashion.jpg" class="img-fluid rounded-circle border border-3 border-primary me-2" style="width: 30px; height: 30px;" alt="">
-                                    <a href="#"><p class="text-white mb-0 link-hover">Newsan unknown printer took a galley of type andscrambled Newsan.</p></a>
+                                    <img src="img/trending/trending.png" class="img-fluid rectangle border border-3 border-primary me-2" style="width: 60px; height: 30px;" alt="">
+                                    <a href="https://www.rsna.org/annual-meeting"><p class="text-white mb-0 link-hover">RSNA Conference - Dec 1 - 4, 2024 at Chicgao</p></a>
                                 </div>
                             </div>
                         </div>
                         <div class="top-link flex-lg-wrap">
-                            <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> <span class="text-body">Tuesday, Sep 12, 2024</span></i>
+                            <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> 
+                                <span class="text-body" id="current-date">
+                                    <script>
+                                        // Function to get current date and day of the week
+                                        function getCurrentDate() {
+                                            const now = new Date();
+                                            const dayOfWeek = now.toLocaleString('default', { weekday: 'long' });
+                                            const currentDate = now.toLocaleString('default', { month: 'short', day: 'numeric', year: 'numeric' });
+                                            return { dayOfWeek, currentDate };
+                                        }
+                                
+                                        // Function to update HTML elements with current date and day of the week
+                                        function updateDate() {
+                                            const { dayOfWeek, currentDate } = getCurrentDate();
+                                            document.getElementById('current-date').innerText = `${dayOfWeek}, ${currentDate}`;
+                                        }
+                                
+                                        // Update date on page load
+                                        updateDate();
+                                
+                                        // Update date every minute
+                                        setInterval(updateDate, 60000);
+                                    </script>
+                                </span>
+                            </i>
                             <div class="d-flex icon">
                                 <p class="mb-0 text-white me-2">Follow Us:</p>
                                 <a href="" class="me-2"><i class="fab fa-linkedin-in text-body link-hover"></i></a>
@@ -72,7 +96,7 @@
                 <div class="container px-0">
                     <nav class="navbar navbar-light navbar-expand-xl">
                         <a href="index.html" class="navbar-brand mt-3">
-                            <p class="text-primary display-6 mb-2" style="line-height: 0;">Medical Research</p>
+                            <p class="text-primary display-6 mb-2" style="line-height: 0;">Med Research</p>
                             <small class="text-body fw-normal" style="letter-spacing: 12px;">News</small>
                         </a>
                         <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -190,7 +214,8 @@
                 </div -->
                 <div>
                     <h3 class="mb-4">Get Every Weekly Updates</h3>
-                    <p class="text-dark mb-4 pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    <p class="text-dark mb-4 pb-2">
+                        Subscribe to get a weekly updates on the AI curated list of latest news in technology, AI and research advancements in all aspects of medicine and life science delivered right in your inbox!
                     </p>
                     <div class="position-relative mx-auto">
                         <input class="form-control w-100 py-3 rounded-pill" type="email" placeholder="Your Busines Email">
@@ -199,107 +224,6 @@
                 </div>
             </div>
             <div class="col-12">
-                <div class="d-flex flex-column">
-                    <a href="#" class="h4 mb-2">Get the best speak market, news.</a>
-                    <p class="fs-5 mb-0"><i class="fa fa-clock"> 06 minute read</i> </p>
-                    <p class="fs-5 mb-0"><i class="fa fa-eye"> 3.5k Views</i></p>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="row g-4 align-items-center">
-                    <div class="col-5">
-                        <div class="overflow-hidden rounded">
-                            <img src="img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="features-content d-flex flex-column">
-                            <a href="#" class="h6">Get the best speak market, news.</a>
-                            <small><i class="fa fa-clock"> 06 minute read</i> </small>
-                            <small><i class="fa fa-eye"> 3.5k Views</i></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="row g-4 align-items-center">
-                    <div class="col-5">
-                        <div class="overflow-hidden rounded">
-                            <img src="img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="features-content d-flex flex-column">
-                            <a href="#" class="h6">Get the best speak market, news.</a>
-                            <small><i class="fa fa-clock"> 06 minute read</i> </small>
-                            <small><i class="fa fa-eye"> 3.5k Views</i></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="row g-4 align-items-center">
-                    <div class="col-5">
-                        <div class="overflow-hidden rounded">
-                            <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="features-content d-flex flex-column">
-                            <a href="#" class="h6">Get the best speak market, news.</a>
-                            <small><i class="fa fa-clock"> 06 minute read</i> </small>
-                            <small><i class="fa fa-eye"> 3.5k Views</i></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="row g-4 align-items-center">
-                    <div class="col-5">
-                        <div class="overflow-hidden rounded">
-                            <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="features-content d-flex flex-column">
-                            <a href="#" class="h6">Get the best speak market, news.</a>
-                            <small><i class="fa fa-clock"> 06 minute read</i> </small>
-                            <small><i class="fa fa-eye"> 3.5k Views</i></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="row g-4 align-items-center">
-                    <div class="col-5">
-                        <div class="overflow-hidden rounded">
-                            <img src="img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="features-content d-flex flex-column">
-                            <a href="#" class="h6">Get the best speak market, news.</a>
-                            <small><i class="fa fa-clock"> 06 minute read</i> </small>
-                            <small><i class="fa fa-eye"> 3.5k Views</i></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="row g-4 align-items-center">
-                    <div class="col-5">
-                        <div class="overflow-hidden rounded">
-                            <img src="img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="features-content d-flex flex-column">
-                            <a href="#" class="h6">Get the best speak market, news.</a>
-                            <small><i class="fa fa-clock"> 06 minute read</i> </small>
-                            <small><i class="fa fa-eye"> 3.5k Views</i></small>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
    </div>
@@ -316,7 +240,8 @@
 <div class="row g-4 align-items-center">
 <div class="col-lg-7">
     <h1 class="mb-4">Get Every Weekly Updates</h1>
-    <p class="text-dark mb-4 pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+    <p class="text-dark mb-4 pb-2">
+        Subscribe to get a weekly updates on the AI curated list of latest news in technology, AI and research advancements in all aspects of medicine and life science delivered right in your inbox!
     </p>
     <div class="position-relative mx-auto">
         <input class="form-control w-100 py-3 rounded-pill" type="email" placeholder="Your Busines Email">
@@ -325,7 +250,7 @@
 </div>
 <div class="col-lg-5">
     <div class="rounded">
-        <img src="img/banner-img.jpg" class="img-fluid rounded w-100 rounded" alt="">
+        <img src="img/medical-research.jpeg" class="img-fluid rounded w-50 rounded .d-none .d-sm-block" alt="">
     </div>
 </div>
 </div>
@@ -337,7 +262,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>MedResearchNews.com</a>, All right reserved.</span>
 </div>
 <!-- div class="col-md-6 my-auto text-center text-md-end text-white" -->
     <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
