@@ -28,6 +28,27 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* Add some height to the page content */
+            .sticky-page-content {
+                height: 2000px;
+            }
+            
+            /* Style the sticky image container */
+            .sticky-image-container {
+                position: sticky;
+                top: 0;
+                right: 0;
+            }
+            
+            /* Style the sticky image */
+            .sticky-image {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        </style>
     </head>
 
     <body>
@@ -221,6 +242,15 @@
                         <input class="form-control w-100 py-3 rounded-pill" type="email" placeholder="Your Busines Email">
                         <button type="submit" class="btn btn-primary rounded-pill text-white px-3 py-2 position-absolute" style="top: 50%; right: 0; transform: translateY(-50%);">Subscribe Now</button>
                     </div>
+                </div>
+            </div>
+            <div class="col-12">
+            </div>
+        </div>
+        <di v class="row g-4">
+            <div class="col-12">
+                <div class="sticky-image-container">
+                    <img src="https://via.placeholder.com/200" class="sticky-image" alt="Sticky Image">
                 </div>
             </div>
             <div class="col-12">
