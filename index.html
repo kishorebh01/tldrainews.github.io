@@ -28,27 +28,6 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-        <style>
-            /* Add some height to the page content */
-            .sticky-page-content {
-                height: 2000px;
-            }
-            
-            /* Style the sticky image container */
-            .sticky-image-container {
-                position: sticky;
-                top: 0;
-                right: 0;
-            }
-            
-            /* Style the sticky image */
-            .sticky-image {
-                width: 200px;
-                height: 200px;
-                object-fit: cover;
-                border-radius: 10px;
-            }
-        </style>
     </head>
 
     <body>
@@ -74,36 +53,36 @@
                             </div>
                             <div class="overflow-hidden" style="width: 735px;">
                                 <div id="note" class="ps-2">
-                                    <img src="img/trending/trending.png" class="img-fluid rectangle border border-3 border-primary me-2" style="width: 60px; height: 30px;" alt="">
+                                    <img src="img/trending/trending.png"" class="img-fluid rounded-circle border border-3 border-primary me-2" style="width: 30px; height: 30px;" alt="">
                                     <a href="https://www.rsna.org/annual-meeting"><p class="text-white mb-0 link-hover">RSNA Conference - Dec 1 - 4, 2024 at Chicgao</p></a>
                                 </div>
                             </div>
                         </div>
                         <div class="top-link flex-lg-wrap">
-                            <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> 
-                                <span class="text-body" id="current-date">
-                                    <script>
-                                        // Function to get current date and day of the week
-                                        function getCurrentDate() {
-                                            const now = new Date();
-                                            const dayOfWeek = now.toLocaleString('default', { weekday: 'long' });
-                                            const currentDate = now.toLocaleString('default', { month: 'short', day: 'numeric', year: 'numeric' });
-                                            return { dayOfWeek, currentDate };
-                                        }
-                                
-                                        // Function to update HTML elements with current date and day of the week
-                                        function updateDate() {
-                                            const { dayOfWeek, currentDate } = getCurrentDate();
-                                            document.getElementById('current-date').innerText = `${dayOfWeek}, ${currentDate}`;
-                                        }
-                                
-                                        // Update date on page load
-                                        updateDate();
-                                
-                                        // Update date every minute
-                                        setInterval(updateDate, 60000);
-                                    </script>
-                                </span>
+                          <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> 
+                              <span class="text-body" id="current-date">
+                                <script>
+                                    // Function to get current date and day of the week
+                                    function getCurrentDate() {
+                                        const now = new Date();
+                                        const dayOfWeek = now.toLocaleString('default', { weekday: 'long' });
+                                        const currentDate = now.toLocaleString('default', { month: 'short', day: 'numeric', year: 'numeric' });
+                                        return { dayOfWeek, currentDate };
+                                    }
+                            
+                                    // Function to update HTML elements with current date and day of the week
+                                    function updateDate() {
+                                        const { dayOfWeek, currentDate } = getCurrentDate();
+                                        document.getElementById('current-date').innerText = `${dayOfWeek}, ${currentDate}`;
+                                    }
+                            
+                                    // Update date on page load
+                                    updateDate();
+                            
+                                    // Update date every minute
+                                    setInterval(updateDate, 60000);
+                                </script>
+                              </span>
                             </i>
                             <div class="d-flex icon">
                                 <p class="mb-0 text-white me-2">Follow Us:</p>
@@ -117,7 +96,7 @@
                 <div class="container px-0">
                     <nav class="navbar navbar-light navbar-expand-xl">
                         <a href="index.html" class="navbar-brand mt-3">
-                            <p class="text-primary display-6 mb-2" style="line-height: 0;">Med Research</p>
+                            <p class="text-primary display-6 mb-2" style="line-height: 0;">Medical Research</p>
                             <small class="text-body fw-normal" style="letter-spacing: 12px;">News</small>
                         </a>
                         <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -125,10 +104,10 @@
                         </button>
                     </nav>
                 </div>
-                <div class="row">
+                <!-- div class="row">
                     <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
                         <div class="placeholder image">Place holder for Google Ad</div>
-                    </div>
+                    </div -->
                 </div>
             </div>
         </div>
@@ -139,12 +118,10 @@
             <div class="container py-5">
                 <div class="row g-4">
                     <div class="col-lg-7 col-xl-8 mt-0">
-                        <div class="bg-light p-4 rounded">
-                            <div class="news-2">
-                                <h3 class="mb-4">This week in Medical AI</h3>
-                            </div>
+                        <div>
 
-              <div class="row g-4 align-items-center">
+
+              <div class="row g-4 bg-light p-4 mb-5 rounded align-items-center">
                 <div class="d-flex flex-column">
                   <a href="https://www.itnonline.com/content/aidoc-receives-fda-clearance-ai-detection-acute-intracranial-hemorrhage#:~:text=Aidoc%20Receives%20FDA%20Clearance%20for%20AI%20Detection%20of%20Acute%20Intracranial%20Hemorrhage,-Workflow%20solution%20powered&text=August%208%2C%202018%20%E2%80%94%20Aidoc%20announced,)%2Dbased%20workflow%20optimization%20solutions." target="_blank" rel="noopener noreferrer" class="h5">Aidoc Receives FDA Clearance for its AI-Powered Solution for Intracranial Hemorrhage</a>
                   <p class="article-summary">Aidoc, a leading provider of AI solutions for medical imaging, has received FDA clearance for its latest solution that uses AI to detect and triage intracranial hemorrhages in head CT scans.</p>
@@ -152,7 +129,8 @@
                   <p></p>
                 </div>
               </div>
-              <div class="row g-4 align-items-center">
+              <div><p></p></div>
+              <div class="row g-4 bg-light p-4 mb-5 rounded align-items-center">
                 <div class="d-flex flex-column">
                   <a href="https://www.medimaging.net/imaging-it/articles/294778673/ai-technology-for-detecting-breast-cancer-receives-ce-mark-approval.html" target="_blank" rel="noopener noreferrer" class="h5">PathAI's AI-Powered Platform for Breast Cancer Receives CE Mark Approval</a>
                   <p class="article-summary">PathAI, a company specializing in AI-powered pathology solutions, has received the CE Mark for its platform that leverages AI to assist pathologists in diagnosing and grading breast cancer.</p>
@@ -160,7 +138,8 @@
                   <p></p>
                 </div>
               </div>
-              <div class="row g-4 align-items-center">
+              <div><p></p></div>
+              <div class="row g-4 bg-light p-4 mb-5 rounded align-items-center">
                 <div class="d-flex flex-column">
                   <a href="https://newsnetwork.mayoclinic.org/discussion/spotlight-on-early-detection-of-3-heart-diseases-using-ecg-ai/#:~:text=Mayo%20Clinic%20has%20developed%20ECG,cardiomyopathy%20(HCM)%20and%20more." target="_blank" rel="noopener noreferrer" class="h5">Mayo Clinic Researchers Develop AI Algorithm to Predict Heart Failure Risk from ECGs</a>
                   <p class="article-summary">Researchers at Mayo Clinic have developed an AI algorithm that can predict the risk of heart failure from electrocardiograms (ECGs), potentially enabling early intervention and prevention.</p>
@@ -168,7 +147,8 @@
                   <p></p>
                 </div>
               </div>
-              <div class="row g-4 align-items-center">
+              <div><p></p></div>
+              <div class="row g-4 bg-light p-4 mb-5 rounded align-items-center">
                 <div class="d-flex flex-column">
                   <a href="https://paige.ai/paige-receives-first-ever-fda-approval-for-ai-product-in-digital-pathology/" target="_blank" rel="noopener noreferrer" class="h5">Paige Receives FDA Clearance for its AI-Powered Pathology Platform for Prostate Cancer</a>
                   <p class="article-summary">Paige, a company focused on AI-powered pathology, has received FDA clearance for its platform that assists pathologists in diagnosing and grading prostate cancer.</p>
@@ -176,7 +156,8 @@
                   <p></p>
                 </div>
               </div>
-              <div class="row g-4 align-items-center">
+              <div><p></p></div>
+              <div class="row g-4 bg-light p-4 mb-5 rounded align-items-center">
                 <div class="d-flex flex-column">
                   <a href="https://www.heartflow.com/press-releases/heartflow-announces-fda-clearance-for-expanded-ffrct-indications/" target="_blank" rel="noopener noreferrer" class="h5">HeartFlow's AI-Powered FFR-CT Analysis Software Receives Expanded FDA Clearance</a>
                   <p class="article-summary">HeartFlow's innovative software, which uses AI to analyze coronary CT angiography (CCTA) images and provide fractional flow reserve (FFR-CT) values, has received expanded FDA clearance for use in patients with a wider range of cardiovascular conditions.</p>
@@ -184,7 +165,8 @@
                   <p></p>
                 </div>
               </div>
-              <div class="row g-4 align-items-center">
+              <div><p></p></div>
+              <div class="row g-4 bg-light p-4 mb-5 rounded align-items-center">
                 <div class="d-flex flex-column">
                   <a href="https://www.deepmind.com/blog/early-detection-of-lung-cancer-using-artificial-intelligence" target="_blank" rel="noopener noreferrer" class="h5">Google's DeepMind Publishes Research on AI for Early Detection of Lung Cancer</a>
                   <p class="article-summary">Google's DeepMind has published research demonstrating the potential of AI to detect lung cancer from CT scans at earlier stages, potentially improving patient outcomes.</p>
@@ -192,7 +174,8 @@
                   <p></p>
                 </div>
               </div>
-              <div class="row g-4 align-items-center">
+              <div><p></p></div>
+              <div class="row g-4 bg-light p-4 mb-5 rounded align-items-center">
                 <div class="d-flex flex-column">
                   <a href="https://www.arterys.com/news/arterys-receives-fda-clearance-for-cardio-ai-mri-analysis-software/" target="_blank" rel="noopener noreferrer" class="h5">Arterys Receives FDA Clearance for its AI-Powered Cardiac MRI Analysis Software</a>
                   <p class="article-summary">Arterys, a company specializing in cloud-based AI solutions for medical imaging, has received FDA clearance for its software that automates the analysis of cardiac MRI images, aiding cardiologists in assessing heart function.</p>
@@ -200,7 +183,8 @@
                   <p></p>
                 </div>
               </div>
-              <div class="row g-4 align-items-center">
+              <div><p></p></div>
+              <div class="row g-4 bg-light p-4 mb-5 rounded align-items-center">
                 <div class="d-flex flex-column">
                   <a href="https://www.zebra-med.com/news/zebra-medical-vision-receives-fda-clearance-for-its-ai-powered-chest-x-ray-analysis-algorithm/" target="_blank" rel="noopener noreferrer" class="h5">Zebra Medical Vision's AI Algorithm for Chest X-ray Analysis Receives FDA Clearance</a>
                   <p class="article-summary">Zebra Medical Vision has received FDA clearance for its AI algorithm that analyzes chest X-rays to detect various abnormalities, including pneumonia, pneumothorax, and tuberculosis.</p>
@@ -208,7 +192,8 @@
                   <p></p>
                 </div>
               </div>
-              <div class="row g-4 align-items-center">
+              <div><p></p></div>
+              <div class="row g-4 bg-light p-4 mb-5 rounded align-items-center">
                 <div class="d-flex flex-column">
                   <a href="https://www.captionhealth.com/news/caption-health-expands-ai-guided-ultrasound-technology-to-include-lung-imaging/" target="_blank" rel="noopener noreferrer" class="h5">Caption Health's AI-Guided Ultrasound Technology Expands to Include Lung Imaging</a>
                   <p class="article-summary">Caption Health's AI-guided ultrasound technology now includes lung imaging capabilities, allowing healthcare providers to perform lung ultrasounds with greater ease and accuracy.</p>
@@ -216,7 +201,8 @@
                   <p></p>
                 </div>
               </div>
-              <div class="row g-4 align-items-center">
+              <div><p></p></div>
+              <div class="row g-4 bg-light p-4 mb-5 rounded align-items-center">
                 <div class="d-flex flex-column">
                   <a href="https://www.prnewswire.com/news-releases/echonous-acquires-bay-labs-to-accelerate-ai-innovation-in-point-of-care-ultrasound-301361300.html" target="_blank" rel="noopener noreferrer" class="h5">Bay Labs Acquired by EchoNous, Expanding AI Capabilities in Point-of-Care Ultrasound</a>
                   <p class="article-summary">Bay Labs, a developer of AI-powered echocardiogram analysis software, has been acquired by EchoNous, a company specializing in point-of-care ultrasound solutions.</p>
@@ -224,6 +210,7 @@
                   <p></p>
                 </div>
               </div>
+              <div><p></p></div>
 </div>
 </div>
 <div class="col-lg-5 col-xl-4">
@@ -236,7 +223,7 @@
                 <div>
                     <h3 class="mb-4">Get Every Weekly Updates</h3>
                     <p class="text-dark mb-4 pb-2">
-                        Subscribe to get a weekly updates on the AI curated list of latest news in technology, AI and research advancements in all aspects of medicine and life science delivered right in your inbox!
+                      Subscribe to get a weekly updates on the AI curated list of latest news in technology, AI and research advancements in all aspects of medicine and life science delivered right in your inbox!
                     </p>
                     <div class="position-relative mx-auto">
                         <input class="form-control w-100 py-3 rounded-pill" type="email" placeholder="Your Busines Email">
@@ -244,17 +231,22 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-            </div>
-        </div>
-        <div class="row g-4">
-            <div class="col-12">
-                <div class="sticky-image-container">
-                    <img src="https://via.placeholder.com/200" class="sticky-image" alt="Sticky Image">
+            <!-- div class="col-12">
+                <div class="row g-4 align-items-center">
+                    <div class="col-5">
+                        <div class="overflow-hidden rounded">
+                            <img src="img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="features-content d-flex flex-column">
+                            <a href="#" class="h6">Get the best speak market, news.</a>
+                            <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                            <small><i class="fa fa-eye"> 3.5k Views</i></small>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12">
-            </div>
+            </div -->
         </div>
    </div>
 </div>
@@ -271,7 +263,7 @@
 <div class="col-lg-7">
     <h1 class="mb-4">Get Every Weekly Updates</h1>
     <p class="text-dark mb-4 pb-2">
-        Subscribe to get a weekly updates on the AI curated list of latest news in technology, AI and research advancements in all aspects of medicine and life science delivered right in your inbox!
+      Subscribe to get a weekly updates on the AI curated list of latest news in technology, AI and research advancements in all aspects of medicine and life science delivered right in your inbox!
     </p>
     <div class="position-relative mx-auto">
         <input class="form-control w-100 py-3 rounded-pill" type="email" placeholder="Your Busines Email">
@@ -280,7 +272,7 @@
 </div>
 <div class="col-lg-5">
     <div class="rounded">
-        <img src="img/medical-research.jpeg" class="img-fluid rounded w-50 rounded .d-none .d-sm-block" alt="">
+        <img src="img/medical-research.jpeg" class="img-fluid rounded w-50 rounded" alt="">
     </div>
 </div>
 </div>
@@ -292,7 +284,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>MedResearchNews.com</a>, All right reserved.</span>
+    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>MedResearchNews</a>, All right reserved.</span>
 </div>
 <!-- div class="col-md-6 my-auto text-center text-md-end text-white" -->
     <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
